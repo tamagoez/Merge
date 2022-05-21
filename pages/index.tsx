@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
 
 const Home: NextPage = () => {
   return (
@@ -9,8 +10,9 @@ const Home: NextPage = () => {
         <title>Merge</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left lg:pl-2">
+        <div className="text-center lg:text-left lg:pl-2 lg:w-3/4">
           <h1 className="text-5xl font-bold">Merge</h1>
           <p className="py-6">Webapp to concentrate with your community or yourself.<br />Chat, Calender, Task(Todo), Vote, daialy and so on!</p>
         </div>
