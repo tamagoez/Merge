@@ -10,7 +10,7 @@ export async function AuthLogin(email: any, password: any) {
     }
   } catch (error) {
     console.log("error", error);
-    alert(error.error_description || error);
+    // alert(error.error_description || error);
   }
 }
 
