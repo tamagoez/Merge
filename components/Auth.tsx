@@ -10,8 +10,8 @@ import {
 import { useState } from "react";
 
 export function LoginComponent() {
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
+  const [email, setEmail] = useState<string>();
+  const [password, setPassword] = useState<string>();
   const submitOnEnter = (event: { keyCode: number }) => {
     // Watch for enter key
     if (event.keyCode === 13) {
