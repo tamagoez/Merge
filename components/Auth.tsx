@@ -1,4 +1,9 @@
-import { AuthLogin, signInWithDiscord, signInWithSlack } from "../lib/Auth";
+import {
+  AuthLogin,
+  AuthSignup,
+  signInWithDiscord,
+  signInWithSlack
+} from "../lib/Auth";
 import Link from "next/link";
 import {
   FaCircle,
@@ -10,7 +15,7 @@ import {
 import { useState } from "react";
 
 export function LoginComponent({ signup }: { signup: boolean }) {
-  function Submit(type, email, password) {
+  function Submit(type: boolean, email: string, password: string) {
     if (type) {
       AuthSignup(email, password);
     } else {
