@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
-              <LoginComponent />
+              <LoginComponent signup={false} />
             </div>
           </div>
         </div>
