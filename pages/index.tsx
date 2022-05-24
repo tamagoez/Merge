@@ -1,3 +1,4 @@
+import { ServeName } from "../lib/Constant";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -9,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className="bg-base-200">
       <Head>
-        <title>Merge</title>
+        <title>{ServeName}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -9,7 +9,7 @@ export default function () {
         <div className="hero-content">
           <div className="card flex-col flex-shrink-0 w-full shadow-2xl bg-base-100">
             <div className="card-body">
-              <LoginComponent signup={false} />
+              <LoginComponent signup={true} />
             </div>
           </div>
         </div>
