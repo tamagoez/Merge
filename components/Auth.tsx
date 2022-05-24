@@ -15,7 +15,7 @@ import {
 import { useState } from "react";
 
 export function LoginComponent({ signup }: { signup: boolean }) {
-  function Submit(type: boolean, email: string, password: string) {
+  function Submit(type: boolean, email: any, password: any) {
     if (type) {
       AuthSignup(email, password);
     } else {
